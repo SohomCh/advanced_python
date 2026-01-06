@@ -25,7 +25,7 @@ class User(BaseModel):
 class Product(BaseModel):
         price:str 
 
-        @field_validator('price'mode=before)
+        @field_validator('price',mode='before')
         def parse_price(cls,v):
             if isinstance(v,str):
                 return float(v.replace('$','').replace(',',''))
