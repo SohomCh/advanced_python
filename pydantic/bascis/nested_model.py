@@ -13,4 +13,3 @@ class User(BaseModel):
     address:Address
 
 
-    
